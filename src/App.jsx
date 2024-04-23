@@ -35,9 +35,9 @@ export const App = () => {
         )}
       </h1>
 
-      {goods.map(name => (
-        <table className="table">
-          <tbody>
+      <table className="table">
+        <tbody>
+          {goods.map(name => (
             <tr
               data-cy="Good"
               className={product === name ? 'has-background-success-light' : ''}
@@ -72,9 +72,9 @@ export const App = () => {
                 {name}
               </td>
             </tr>
-          </tbody>
-        </table>
-      ))}
+          ))}
+        </tbody>
+      </table>
     </main>
   );
 };
